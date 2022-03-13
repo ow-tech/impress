@@ -37,10 +37,14 @@
 
 	<!-- jQuery 3.3.1 -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 
 	<!-- Compressed Scripts -->
 	<script src="js/slides.min.js" type="text/javascript"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="js/contact.js" type="text/javascript"></script>
 
 	<!-- Fonts and Material Icons -->
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
@@ -52,14 +56,6 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
 
-
-   
-
-
-  <!-- <symbol id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 264 81.75"><defs><style>.cls-1,.cls-3{fill:#34558c;stroke-width:3px;}.cls-1,.cls-2,.cls-3{stroke:#34558c;}.cls-1,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke-linecap:round;}.cls-1,.cls-7{stroke-linejoin:round;}.cls-2,.cls-6{fill:none;}.cls-2,.cls-5{stroke-miterlimit:10;}.cls-2,.cls-4,.cls-5,.cls-6{stroke-width:2px;}.cls-3,.cls-4,.cls-6{stroke-linejoin:bevel;}.cls-4,.cls-5{fill:#515251;}.cls-4,.cls-5,.cls-6{stroke:#515251;}.cls-7{font-size:63.72px;fill:#515351;stroke:#515351;stroke-width:0.96px;font-family:MyriadPro-Regular, Myriad Pro;}</style></defs><g id="Template_Capture1.PNG" data-name="Template Capture1.PNG"><image width="352" height="109" transform="scale(0.75)" xlink:href="../../../../../Pictures/Capture1.PNG"/></g><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M201.5,204.39q4.19-13.65,8.36-27.32" transform="translate(-190 -166)"/><path class="cls-1" d="M209.86,177.07l26.68-5.78" transform="translate(-190 -166)"/><path class="cls-1" d="M236.54,171.29,252.61,188" transform="translate(-190 -166)"/><path class="cls-2" d="M252.61,188a4.34,4.34,0,0,0,.64,6.43,4,4,0,0,0,4.5,0,4.32,4.32,0,0,0,.32-6.43A4.15,4.15,0,0,0,252.61,188Z" transform="translate(-190 -166)"/><path class="cls-1" d="M263.43,201.93l-8.36,27.32" transform="translate(-190 -166)"/><path class="cls-1" d="M255.07,229.25,228.39,235" transform="translate(-190 -166)"/><path class="cls-1" d="M228.39,235l-16.07-16.72" transform="translate(-190 -166)"/><path class="cls-2" d="M212.32,218.32a4.34,4.34,0,0,0-.64-6.43,4,4,0,0,0-4.5,0,4.32,4.32,0,0,0-.32,6.43A4.13,4.13,0,0,0,212.32,218.32Z" transform="translate(-190 -166)"/><path class="cls-1" d="M217.25,182.21q2.56,10.93,5.14,21.86" transform="translate(-190 -166)"/><path class="cls-1" d="M223,180.61q4.82,18.31,9.64,36.64" transform="translate(-190 -166)"/><path class="cls-1" d="M232.68,187q4.66,18.48,9.32,37" transform="translate(-190 -166)"/><path class="cls-3" d="M243,201.93l5.79,22.82" transform="translate(-190 -166)"/><path class="cls-4" d="M289.93,182.25c0,13.58,0,28.17,0,41.75" transform="translate(-190 -166)"/><path class="cls-5" d="M290.93,184.25l1.89,2.5" transform="translate(-190 -166)"/><path class="cls-4" d="M295.43,190.64l6,12.47" transform="translate(-190 -166)"/><path class="cls-4" d="M312.39,184.18l-10.28,18" transform="translate(-190 -166)"/><path class="cls-4" d="M314,182.57q-.51,20.4-1,40.79" transform="translate(-190 -166)"/><path class="cls-6" d="M321.61,182.75a14.2,14.2,0,0,1,9.21.64,13.88,13.88,0,0,1,5.79,4.72,14.5,14.5,0,0,1,2,4.5,18,18,0,0,1,.54,9.32,13.63,13.63,0,0,1-3.32,6.86,13.8,13.8,0,0,1-4.4,3,15.43,15.43,0,0,1-3.42,1,50.13,50.13,0,0,1-5.65.43h0c-.27,0-.14,1.74-.11,2.14.08,1.19.14,3.69.11,9.11" transform="translate(-190 -166)"/><path class="cls-6" d="M348.61,198.5l.21-15.75a15.46,15.46,0,0,1,7.29.43,14.25,14.25,0,0,1,3.64,1.71,13.77,13.77,0,0,1,4.5,5.15,14.83,14.83,0,0,1,1.29,4,17.7,17.7,0,0,1,0,8.79,15.78,15.78,0,0,1-7.08,8.89A14.84,14.84,0,0,1,348.07,213" transform="translate(-190 -166)"/><path class="cls-6" d="M358.46,211.68q3.5,6.31,7,12.64" transform="translate(-190 -166)"/><path class="cls-6" d="M388.14,182.43l-13.28-.11V208" transform="translate(-190 -166)"/><path class="cls-6" d="M377.21,211.25h-2.67q0,6.58.1,13.18l13.93-.22" transform="translate(-190 -166)"/><path class="cls-6" d="M410.67,185.11a8,8,0,0,0-6.5-2.79c-4.38.41-6.19,4.71-6.28,4.93-1.46,3.63.46,7,.85,7.71.58,1,1.81,2.23,4.26,4.61,1.85,1.8,1.83,1.62,3.2,3a64.75,64.75,0,0,1,4.36,5.14c1.43,1.79,1.91,2.46,2.13,3.54a11.19,11.19,0,0,1,0,2.89c0,1-.07,2.45,0,4.18" transform="translate(-190 -166)"/><path class="cls-6" d="M411.61,220.79a7.81,7.81,0,0,1-3.32,2.89,7.91,7.91,0,0,1-5.79.21" transform="translate(-190 -166)"/><path class="cls-6" d="M435.34,185.69a8.05,8.05,0,0,0-6.48-2.7c-4.38.4-6.18,4.56-6.27,4.77-1.45,3.52.46,6.79.85,7.47.58,1,1.81,2.15,4.25,4.46,1.85,1.74,1.83,1.57,3.19,2.9a65.64,65.64,0,0,1,4.36,5c1.42,1.73,1.9,2.38,2.12,3.42a10.52,10.52,0,0,1,0,2.8c0,1-.07,2.37,0,4.05" transform="translate(-190 -166)"/><path class="cls-6" d="M436.16,221.21a7.68,7.68,0,0,1-3.32,2.89,8,8,0,0,1-5.79.22" transform="translate(-190 -166)"/><text class="cls-7" transform="translate(89.82 58.46) scale(0.27 1)">!</text></g></symbol> -->
-
-  
-  <!-- <symbol id="logo" viewBox="0 0 106 31"><title> </title><path d="M17.413 14.04c-.56-5.84-5.6-7-8.52-7-4.6 0-8.6 2.92-8.6 7.52 0 3 2.4 4.88 5.28 5.8 4.24 1.64 5.88 1.84 5.88 3.36 0 1.08-1.2 1.72-2.32 1.72-.28 0-2.24 0-2.52-2.04h-6.6c.6 5.84 5.68 7.36 9.04 7.36 4.92 0 9.04-2.88 9.04-7.76 0-4.8-4-5.92-7.76-6.96-1.76-.52-3.4-1.2-3.4-2.2 0-.6.48-1.48 1.88-1.48 1.96 0 2.04 1.2 2.08 1.68h6.52zm2.222 15.96h6.64v-29.6h-6.64v29.6zm9.662-24.56h6.64v-5.04h-6.64v5.04zm0 24.56h6.64v-22.2h-6.64v22.2zm32.782-29.6h-6.64v9.28c-.72-.72-2.6-2.64-6.52-2.64-5.64 0-11 4.28-11 11.8 0 6.68 4.4 11.88 11.12 11.88 4.48 0 6.08-2.2 6.72-3.12v2.4h6.32v-29.6zm-17.52 18.4c0-2.56 1.8-5.56 5.64-5.56 1.56 0 2.96.56 3.96 1.56 1 .96 1.64 2.32 1.64 3.92.08 1.64-.52 3.08-1.56 4.12s-2.52 1.68-4.12 1.68c-3.12 0-5.56-2.28-5.56-5.68v-.04zm42.502 2.4c.52-4.08-.32-7.64-3.12-10.64-2.08-2.2-5-3.52-8.4-3.52-6.76 0-11.64 5.72-11.64 11.92 0 6.6 5.4 11.76 11.76 11.76 2.28 0 4.48-.68 6.32-2 1.88-1.28 3.44-3.2 4.52-5.68h-6.8c-.8 1.16-1.92 2.08-4.04 2.08-2.6 0-4.84-1.56-5.12-3.92h16.52zm-16.44-5.04c.16-1.04 1.52-3.52 4.96-3.52s4.8 2.48 4.96 3.52h-9.92zm34.502-2.12c-.56-5.84-5.6-7-8.52-7-4.6 0-8.6 2.92-8.6 7.52 0 3 2.4 4.88 5.28 5.8 4.24 1.64 5.88 1.84 5.88 3.36 0 1.08-1.2 1.72-2.32 1.72-.28 0-2.24 0-2.52-2.04h-6.6c.6 5.84 5.68 7.36 9.04 7.36 4.92 0 9.04-2.88 9.04-7.76 0-4.8-4-5.92-7.76-6.96-1.76-.52-3.4-1.2-3.4-2.2 0-.6.48-1.48 1.88-1.48 1.96 0 2.04 1.2 2.08 1.68h6.52z"/></symbol> -->
 
   <symbol id="logo-icon" viewBox="0 0 50 41"><title>Slides Framework</title><path d="M4,12h42c2.2,0,4,1.8,4,4v21c0,2.2-1.8,4-4,4H4c-2.2,0-4-1.8-4-4V16C0,13.8,1.8,12,4,12z"/><path opacity="0.6" d="M45.5,9h-41C3.7,9,3,8.3,3,7.5v0C3,6.7,3.7,6,4.5,6h41C46.3,6,47,6.7,47,7.5v0C47,8.3,46.3,9,45.5,9z"/><path opacity="0.4" d="M7.5,0h35C43.3,0,44,0.7,44,1.5v0C44,2.3,43.3,3,42.5,3h-35C6.7,3,6,2.3,6,1.5v0C6,0.7,6.7,0,7.5,0z"/></symbol>
   
@@ -144,11 +140,11 @@
       <ul class="menu">
        
         <li><a href="#">Home</a></li>
-        <li><a href="#videos">Systems</a></li>
+        <li><a href="#systems">Systems</a></li>
         <li><a href="#features">Branding</a></li>
         <li><a href="#case">CaseStudy</a></li>
-        <li><a href="#pricing">Services</a></li>
-        <li><a href="#download">ContactUs</a></li>
+        <!-- <li><a href="#pricing">Services</a></li> -->
+        <li><a href="#contact">ContactUs</a></li>
       </ul>
     </div>
     <div class="right"><a class="button blue gradient" href="#">Academic Services</a><a class="button green gradient" href="" target="_blank">Blog</a></div>
@@ -166,11 +162,11 @@
     <a href="#" class="logo"><svg width="37" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-icon"></use></svg></a>
     <ul class="mainMenu margin-top-3">
       <li><a href="#">Home</a></li>
-      <li><a href="#videos">Systems</a></li>
+      <li><a href="#systems">Systems</a></li>
       <li><a href="#features">Branding</a></li>
       <li><a href="#case">Case study</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#download">Download</a></li>
+      <!-- <li><a href="#pricing">Pricing</a></li> -->
+      <li><a href="#contact">Download</a></li>
     </ul>
     <ul class="subMenu small opacity-8">
       <li><a href="#">Submit Product</a></li>
@@ -199,7 +195,7 @@
             <li class="col-6-12 left middle">
               <h1 class="ae-1 fromLeft">Welcome at !mpress. Where art Meets Tech</h1>
               <p class="ae-2 fromLeft"><span class="opacity-8">Raising our clients' intuition to create and rejuvenate brands that endure in memory. With iconic bespoke software and systems, that's simple, scalable and above all effective.<i class="fas fa-palette"></i><i class="fas fa-paint-brush"></i></span> is in our <i class="fas fa-heart"></i>s.</p>
-              <a class="button blue gradient ae-3 fromCenter cropLeft">Get Started</a><a class="button white ae-4 fromCenter">Learn more</a>
+              <a class="button blue gradient ae-3 fromCenter cropLeft" href="#systems">Get Started</a><a class="button white ae-4 fromCenter">Learn more</a>
             </li>
             <li style="border-radius: 10px" class="col-6-12">
               <!-- <img style="border-radius:30;" class="ae-4" width="605" src="assets/img/background/8401.png" alt="Thumbnail" data-action="zoom"/> -->
@@ -214,7 +210,7 @@
 </section>
 
 <!-- Slide 2 (#60) -->
-<section class="slide fade-6 kenBurns" data-name="videos">
+<section class="slide fade-6 kenBurns" data-name="systems">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -223,7 +219,7 @@
           <ul class="grid">
             <li class="col-6-12 left">
               <h1 class="ae-2 fromLeft">Web Solutions and Aplications</h1>
-              <p class="ae-3 fromLeft"><span class="opacity-8">!mpressthe grandeur brand of exquisite high end authentic designs and softwares..</span></p>
+              <p class="ae-3 fromLeft"><span class="opacity-8">!mpress the grandeur brand of exquisite high end authentic designs and softwares..</span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
                 <li class="selected">Portfolios</li>
                 <li>Online Stores</li>
@@ -370,9 +366,9 @@
             <li class="col-7-12 left cell-26">
               <h1 class="ae-1 fromLeft">How we work</h1>
               <div class="ae-2 fromLeft">
-                <p class="opacity-8">Inovation and Presentation of tailor made Tech solutions does not fall below us. We aim to create a long lasting relation with our clients, Get to know their needs and always be there.</p>
+                <p class="opacity-8">Innovation and Presentation of tailor made Tech solutions does not fall below us. We aim to create a long lasting relation with our clients, Get to know their needs and always be there.</p>
               </div>
-              <div class="relative">
+              <!-- <div class="relative">
                 <img src="assets/img/icon-1.png" class="ae-3 fromCenter app-26" alt="app"/>
                 <div class="text-26">
                   <h3 class="ae-3 fromRight">Ember for Apple Watch</h3>
@@ -380,7 +376,7 @@
                     <p class="tiny opacity-6">People don&rsquo;t use a product<br>because of the great&nbsp;design.</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </li>
             <li class="col-5-12">
               <div class="fix-4-12 center">
@@ -417,7 +413,7 @@
           <div class="fix-7-12">
             <p class="margin-bottom-2 ae-1"><span class="opacity-6">Case study</p>
             <h1 class="ae-2 huge fromAbove margin-bottom-2">Discomfort is a signal of a good concept</h1>
-            <a href="#" class="button green gradient ae-3">Purchase</a>
+            <a href="#contact" class="button green gradient ae-3">Purchase</a>
           </div>
           <ul class="grid fixedSpaces left margin-top-10">
             <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
@@ -446,7 +442,7 @@
 </section>
 
 <!-- Slide 6 (#83) -->
-<section class="slide fade-6 kenBurns" data-name="pricing">
+<!-- <section class="slide fade-6 kenBurns" data-name="pricing">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -477,10 +473,11 @@
               </div>
               <div class="margin-top-3 margin-bottom-3 equalElement ae-7">
                 <ul class="p tiny">
-                  <li><strong>Mobile-Optimized</strong></li>
+                 
                   <li><strong>Consultation</strong></li>
                   <li class="opacity-8">Digital Marketing Service</li>
-                  <li class="opacity-8">24/7 Customer Support</li>
+                  <li><strong>Mobile-Optimized</strong></li>
+                  
                 </ul>
               </div>
               <a href="#" class="button green gradient wide cropSides cropBottom ae-8">Purchase</a>
@@ -498,7 +495,7 @@
                   <li><strong>Logos</strong></li>
                   <li><strong>Customization</strong></li>
                   <li class="opacity-8">Static Websites</li>
-                  <li class="opacity-8">Unlimited Projects</li>
+                 
                 </ul>
               </div>
               <a href="#" class="button green gradient wide cropSides cropBottom ae-9">Contact</a>
@@ -510,14 +507,13 @@
     </div>
   </div>
   <div class="background" style="background-image:url(assets/img/background/rebel\ with\ bird\ color.jpg)"></div>
-</section>
+</section> -->
 
 <!-- Slide 7 (#95) -->
-<section class="slide fade-6 kenBurns" data-name="download">
+<section class="slide fade-6 kenBurns" data-name="contact">
   <div class="content">
     <div class="container">
       <div class="wrap">
-      
         <div class="fix-6-12">
           <!-- <h1 class="huge ae-1 margin-bottom-2">Download Mobile App</h1> -->
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p>
@@ -531,19 +527,19 @@
               <!-- Name input -->
               <div class="form-outline mb-4 ae-3" style="text-align: center;">
                 <!-- <label class="form-label" for="form4Example1">Name</label> -->
-                <input type="text" id="form4Example1" class="form-control " placeholder="Name"/>
+                <input type="text" id="name" class="form-control " placeholder="Name"/>
                 
               </div>
   
               <!-- Email input -->
               <div class="form-outline mb-4 ae-3">
-                <input type="email" id="form4Example2" placeholder ="Email address"class="form-control " />
+                <input type="email" id="email" placeholder ="Email address"class="form-control " />
                 <!-- <label class="form-label" for="form4Example2">Email address</label> -->
               </div>
   
               <!-- Message input -->
               <div class="form-outline mb-4 ae-3">
-                <textarea class="form-control " id="form4Example3" placeholder="Message"rows="4"></textarea>
+                <textarea class="form-control " id="message" placeholder="Message"rows="4"></textarea>
                 <!-- <label class="form-label" for="form4Example3">Message</label> -->
               </div>
   
@@ -562,7 +558,7 @@
               </div> -->
   
               <!-- Submit button -->
-              <button type="submit" class="button blue gradient ae-4" name="submit">Send</button>
+              <button type="submit" class="button blue gradient ae-4" name="submit"n onclick="sendEmail()">Send</button>
             </form>
 
           </div>
@@ -597,10 +593,10 @@
     <a href="#">Contact us</a>
   </div>
   <ul>
-    <li class="social-facebook"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb-like"></use></svg></li>
-    <li class="social-twitter"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></li>
-    <li class="social-googlePlus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></li>
-    <li class="social-linkedin"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></li>
+    <li class="social-facebook"><svg><use xmlns:xlink="alex@impressme.biz" xlink:href="#fb-like"></use></svg></li>
+    <li class="social-twitter"><svg><use xmlns:xlink="alex@impressme.biz" xlink:href="#twitter"></use></svg></li>
+    <li class="social-googlePlus"><svg><use xmlns:xlink="alex@impressme.biz" xlink:href="#googlePlus"></use></svg></li>
+    <li class="social-linkedin"><svg><use xmlns:xlink="alex@impressme.biz" xlink:href="#linkedin"></use></svg></li>
     <li class="mail" data-subject="Subject" data-body="Body">share by email</li>
   </ul>
 </div>
